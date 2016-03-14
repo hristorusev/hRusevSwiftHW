@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EX4</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            function ValidateUserLoginForm() 
+            {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                if(username == "" || password == "")
+                {
+                  alert("Username and Password are required!");
+                }
+            }
+        </script>
+        <style type="text/css">
+            body{font: 13px Arial, Helvetica, sans-serif;}
+            input {background: #E9E9E9; border: 1px solid #999999; font: 13px Arial, Helvetica, sans-serif;}
+            th{align-content:center;}
+            tfoot>tr>td{text-align: center;}
+            .center{background-color: #99ff99;width:300px; margin:0 auto;}
+            table {width: 50%; margin-left: auto; margin-right: auto;}  
+        </style>
+    </head>
+    <body>
+        <div class="center">
+        <form name="UserLoginForm" id="UserLoginForm" onsubmit="ValidateUserLoginForm()" method="POST" action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">User Login Form</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><input type="submit" name="submit" value="Login"/></td>
+                    </tr>  
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" name="username" id="username"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" name="password" id="password"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        </div>
+    </body>
+</html>

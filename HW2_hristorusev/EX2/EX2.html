@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EX2</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="js_tigra_calendar/tcal.css" />
+    <link rel="stylesheet" type="text/css" href="EX2.css" />
+</head>
+<body class="gradient-pattern">
+	 <div class="center">
+        <form name="UserRegisterForm" id="UserRegisterForm" method="POST" action="">
+            <div class="row" id="header">User Register Form</div>
+            <div class="row">
+                <div class="left"><label for="username">Username:</label></div>
+                <input type="text" name="username" id="username"/>
+            </div>
+            <div class="row">
+                <div class="left"><label for="password">Password:</label></div>
+                <input type="password" name="password" id="password"/>
+            </div>
+            <div class="row">
+               <div class="left"><label for="repassword">Re-Password:</label></div>
+               <input type="password" name="repassword" id="repassword"/>
+            </div>
+            <div class="row">
+                <div class="left"><label for="birthdate">Birthdate:</label></div>
+                <input type="text" name="birthdate" id=birthdate class="tcal tcalAddtitional"/>
+            </div>
+            <div class="row">
+                <div class="left"><label for="genderm">Sex:</label></div>
+                <input type="radio" name="gender" id="genderm" value="male" onclick="javascript:otherCheck();"/> <label for="genderm">Male</label>
+                <input type="radio" name="gender" id="genderf" value="female" onclick="javascript:otherCheck();"/> <label for="genderf">Female</label>
+                <input type="radio" name="gender" id="gendero" value="other" onclick="javascript:otherCheck();"/> <label for="gendero">Other</label>
+            </div>
+            <div class="row" id="otherrow">
+                 <div class="left"><label for="pleasespecify">Please specify:</label></div>
+                 <input type="text" name="pleasespecify" id="pleasespecify"/>
+            </div>
+            <div class="row">
+                 <div class="left"><label for="homeaddress">Home address:</label></div>
+                 <input type="text" name="homeaddress" id="homeaddress"/>
+            </div>
+            <div class="row">
+                <div class="left"><label for="workaddress">Work address:</label></div>
+                <input type="text" name="workaddress" id="workaddress"/>
+            </div>
+            <div class="row">
+                <div class="left"><label for="schoolname">School name:</label></div>
+                <input type="text" name="schoolname" id="schoolname"/>
+            </div>
+            <div class="row">
+                Years of educaion:
+            </div>
+            <div class="row">
+                <div class="left"><label for="from">From:</label></div>
+                <input type="text" name="from" id="from" class="tcal tcalAddtitional"/>
+            </div>
+            <div class="row">
+                <div class="left"><label for="to">To:</label></div>
+                <input type="text" name="to" id="to" class="tcal tcalAddtitional"/>
+            </div>
+            <div class="row">
+                <div class="left"><label for="phonenomber">Phone number:</label></div>
+                <input type="tel" name="phonenomber" id="phonenomber"/>
+            </div>
+            <div class="row">
+                <div class="left"><label for="email">Email:</label></div>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="row">
+                <div class="left"><label for="additionalnotes">Additional notes:</label></div>
+                <textarea rows="6" cols="17" name="additionalnotes" id="additionalnotes">
+                </textarea>   
+            </div>
+            <div class="row">
+                <input type="checkbox" name="termsandconditions" id="termsandconditions" value="yes">
+                <label for="termsandconditions">Terms and conditions</label>
+            </div>
+            <div class=row>
+                <input type="submit" name="submit" value="Register"/>
+            </div>
+        </form>
+     </div>
+<script type="text/javascript" src="EX2.js"></script>
+<script type="text/javascript" src="js_tigra_calendar/tcal.js"></script>
+</body>
+</html>
