@@ -1,0 +1,58 @@
+   body
+   {
+     font: 13px Arial, Helvetica, sans-serif;
+   }
+   .row
+   {
+      text-align: center;
+      padding-top: 3px;
+      padding-bottom: 3px;
+   }
+   .left
+   {
+      width: 150px;
+      float: left;
+      text-align: right;
+   }
+   #header
+   {
+      font-weight: bold;
+   }
+   .gradient-pattern 
+     {
+      background: -webkit-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), -webkit-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), -webkit-linear-gradient(135deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+      background: -moz-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), -moz-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), -moz-linear-gradient(-45deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+      background: linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), linear-gradient(-45deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+      background-position: 64px 64px, 0 0, 0 0;
+      -webkit-background-origin: padding-box;
+      background-origin: padding-box;
+      -webkit-background-clip: border-box;
+      background-clip: border-box;
+      -webkit-background-size: 128px 128px;
+      background-size: 128px 128px;
+     }
+    .center
+     { 
+      background-color: #99ff99; 
+      width:400px; 
+      margin:0 auto;
+      border-top-left-radius:2em;
+      border-bottom-right-radius:2em;
+      -webkit-box-shadow: 20px 25px 53px -9px rgba(0,0,0,0.5);        
+      -moz-box-shadow: 20px 25px 53px -9px rgba(0,0,0,0.5);
+      box-shadow: 20px 25px 53px -9px rgba(0,0,0,0.5);
+     }
+    input, textarea 
+     {
+      background: #E9E9E9; 
+      border: 1px solid #999999; 
+      font: 13px Arial, Helvetica, sans-serif;  resize: none;
+      border-top-left-radius:5px;
+      border-top-right-radius:5px;
+      border-bottom-right-radius:5px;
+      border-bottom-left-radius:5px;
+     }
+    #otherrow
+     {
+      display: none;
+     }

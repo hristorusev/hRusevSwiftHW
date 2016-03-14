@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EX5</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+            .gradient-pattern 
+                {
+
+                  background: -webkit-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), -webkit-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), -webkit-linear-gradient(135deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+                  background: -moz-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), -moz-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), -moz-linear-gradient(-45deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+                  background: linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), linear-gradient(-45deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+                  background-position: 64px 64px, 0 0, 0 0;
+                  -webkit-background-origin: padding-box;
+                  background-origin: padding-box;
+                  -webkit-background-clip: border-box;
+                  background-clip: border-box;
+                  -webkit-background-size: 128px 128px;
+                  background-size: 128px 128px;
+                }
+            th{
+                align-content:center;
+              }
+            tfoot>tr>td
+              {
+                text-align: center;
+              }
+            .center
+              { 
+                background-color: #99ff99; 
+                width:500px; 
+                margin:0 auto;
+                border-top-left-radius:2em;
+                border-bottom-right-radius:2em;
+                -webkit-box-shadow: 20px 25px 53px -9px rgba(0,0,0,0.5);        
+                -moz-box-shadow: 20px 25px 53px -9px rgba(0,0,0,0.5);
+                box-shadow: 20px 25px 53px -9px rgba(0,0,0,0.5);
+              }
+            table
+             {
+                width:100%; 
+                font: 13px Arial, Helvetica, sans-serif;}  
+            .left
+             {
+                width: 200px; 
+                text-align:right;
+             }
+            input, textarea 
+             {
+                background: #E9E9E9; 
+                border: 1px solid #999999; 
+                font: 13px Arial, Helvetica, sans-serif;  resize: none;
+                border-top-left-radius:5px;
+                border-top-right-radius:5px;
+                border-bottom-right-radius:5px;
+                border-bottom-left-radius:5px;
+             }
+            .centertd
+             {
+                text-align:center;
+             }
+            .otherrow
+             {
+                display: none;
+             }
+    </style>
+    <script type="text/javascript">
+		function otherCheck() {
+            /*with visibility*/
+		    /*if (document.getElementById('gendero').checked) {
+		        document.getElementById('otherrow').style.visibility = 'visible';
+		    }
+		    else document.getElementById('otherrow').style.visibility = 'hidden';*/
+            /*with display */
+            var elements = document.getElementsByClassName('otherrow');
+            if (document.getElementById('gendero').checked)
+             {  
+                for(var i = 0, length = elements.length; i < length; i++) 
+                {
+                          elements[i].style.display = 'table-cell';
+                }
+             }
+            else
+            {
+                 for(var i = 0, length = elements.length; i < length; i++) 
+                {
+                          elements[i].style.display = 'none';
+                }
+            } 
+		}
+	 </script>
+     <link rel="stylesheet" type="text/css" href="js_tigra_calendar/tcal.css" />
+     <script type="text/javascript" src="js_tigra_calendar/tcal.js"></script>
+</head>
+<body class="gradient-pattern">
+	 <div class="center">
+        <form name="UserRegisterForm" id="UserRegisterForm" method="POST" action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">User Register Form</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><input type="submit" name="submit" value="Register"/></td>
+                    </tr>  
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td class="left"><label for="username">Username:</label></td>
+                        <td><input type="text" name="username" id="username"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left"><label for="password">Password:</label></td>
+                        <td><input type="password" name="password" id="password"/></td>
+                    </tr>
+                     <tr>
+                        <td class="left"><label for="repassword">Re-Password:</label></td>
+                        <td><input type="password" name="repassword" id="repassword"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="birthdate">Birthdate:</label></td>
+						<td><input type="text" name="birthdate" id=birthdate class="tcal tcalAddtitional"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="genderm">Sex:</label></td>
+                    	<td>
+                    		  <input type="radio" name="gender" id="genderm" value="male" onclick="javascript:otherCheck();"/> <label for="genderm">Male</label>
+							  <input type="radio" name="gender" id="genderf" value="female" onclick="javascript:otherCheck();"/> <label for="genderf">Female</label>
+							  <input type="radio" name="gender" id="gendero" value="other" onclick="javascript:otherCheck();"/> <label for="gendero">Other</label>
+                    	</td>
+                    </tr>
+                    <tr>
+                    	<td class="left otherrow"><label for="pleasespecify">Please specify:</label></td>
+                    	<td class="otherrow"><input type="text" name="pleasespecify" id="pleasespecify"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="homeaddress">Home address:</label></td>
+                    	<td><input type="text" name="homeaddress" id="homeaddress"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="workaddress">Work address:</label></td>
+                    	<td><input type="text" name="workaddress" id="workaddress"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="schoolname">School name:</label></td>
+                    	<td><input type="text" name="schoolname" id="schoolname"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="centertd" colspan="2">Years of educaion:</td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="from">From:</label></td>
+                    	<td><input type="text" name="from" id="from" class="tcal tcalAddtitional"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="to">To:</label></td>
+                    	<td><input type="text" name="to" id="to" class="tcal tcalAddtitional"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="phonenomber">Phone number:</label></td>
+                    	<td><input type="tel" name="phonenomber" id="phonenomber"/></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="email">Email:</label></td>
+                    	<td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                    	<td class="left"><label for="additionalnotes">Additional notes:</label></td>
+                    	<td>
+                    		<textarea rows="6" cols="17" name="additionalnotes" id="additionalnotes">
+                    		</textarea>
+                    	</td>
+                    </tr>
+                    <tr>
+                    	<td  class="left"><input type="checkbox" name="termsandconditions" id="termsandconditions" value="yes"></td>
+                    	<td><label for="termsandconditions">Terms and conditions</label></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        </div>
+</body>
+</html>
