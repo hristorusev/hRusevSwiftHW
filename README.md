@@ -1,2 +1,2 @@
 # hRusevSwiftHW
-# Hristo Rusev swiftAcademy Homework of PPH&MySQL
+Hristo Rusev swiftAcademy Homework of PPH&MySQL
