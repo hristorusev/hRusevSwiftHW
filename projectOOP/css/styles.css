@@ -1,0 +1,162 @@
+body{
+  font-family: Arial, sans-serif;
+  overflow: scroll;
+}
+
+header {
+  display: block;
+  border-radius: 10px;
+  background-color: #00f;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 5em;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+fieldset {
+  border-radius: 10px;
+  border: 1px solid #00f;
+  background-color: white;
+}
+
+legend {
+  color: #00f;
+}
+
+label
+{
+  float: left;
+  width: 40%;
+  margin-right: 0.5em;
+  padding-top: 0.2em;
+  text-align: right;
+}
+
+textarea
+{
+  float: left;
+  width: 40%;
+  margin-right: 0.5em;
+  padding-top: 0.2em;
+}
+
+input
+{
+  width: 20%;
+  padding-top: 0.2em;
+  text-align: middle;
+}
+
+footer
+{
+  display: block;
+  border: solid 1px #00f;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+#container
+{
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main_menu
+{
+  list-style-type: none;
+  background-color: #ccf;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#main_menu > li
+{
+  display: inline-block;
+}
+.red
+{
+  font-weight: bold;
+  color: red;
+}
+.datagrid table 
+{ 
+  border-collapse: collapse; 
+  text-align: left; width: 100%; 
+} 
+.datagrid 
+{
+  font: normal 12px/150% Geneva, Arial, Helvetica, sans-serif; 
+  background: #fff; 
+  overflow: hidden; 
+  border: 1px solid #006699; 
+  -webkit-border-radius: 9px; 
+  -moz-border-radius: 9px; 
+  border-radius: 9px; 
+}
+.datagrid table td, .datagrid table th 
+{ 
+  padding: 1px 10px; 
+}
+.datagrid table thead th 
+{
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+  background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+  background-color:#006699; color:#FFFFFF;
+  font-size: 15px; 
+  font-weight: bold; 
+  border-left: 1px solid #0070A8; 
+}
+ .datagrid table thead th:first-child 
+{
+  border: none; 
+}
+.datagrid table tbody td 
+{
+  color: #00557F;
+  border-left: 1px solid #E1EEF4;
+  font-size: 12px;
+  font-weight: normal;
+}
+.datagrid table tbody .alt td 
+{ 
+  background: #E1EEf4; 
+  color: #00557F;
+}
+.datagrid table tbody td:first-child 
+{ 
+  border-left: none;
+}
+.datagrid table tbody tr:last-child td 
+{
+  border-bottom: none; 
+}
+.gradient-pattern 
+     {
+      background: -webkit-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), -webkit-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), -webkit-linear-gradient(135deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+      background: -moz-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), -moz-linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), -moz-linear-gradient(-45deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+      background: linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px), linear-gradient(45deg, rgb(146,186,172) 45px, rgba(0,0,0,0) 45px, rgba(0,0,0,0) 91px, rgb(225,235,189) 91px, rgb(225,235,189) 135px, rgba(0,0,0,0) 135px), linear-gradient(-45deg, rgb(146,186,172) 23px, rgba(0,0,0,0) 23px, rgba(0,0,0,0) 68px, rgb(146,186,172) 68px, rgb(146,186,172) 113px, rgba(0,0,0,0) 113px, rgba(0,0,0,0) 158px, rgb(146,186,172) 158px), rgb(225, 235, 189);
+      background-position: 64px 64px, 0 0, 0 0;
+      -webkit-background-origin: padding-box;
+      background-origin: padding-box;
+      -webkit-background-clip: border-box;
+      background-clip: border-box;
+      -webkit-background-size: 128px 128px;
+      background-size: 128px 128px;
+     }
